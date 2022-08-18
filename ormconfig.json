@@ -1,0 +1,30 @@
+{
+   "type": "oracle",
+   "host": "194.177.71.238",
+   "port": 1521,
+   "username": "TOMBOLA",
+   "protocol": "tcp",
+   "password": "TOMBOLA#2022.",
+   "database": "TOMBOLA",
+   "connectString": "(DESCRIPTION=(ADDRESS=(COMMUNITY = tcp.world)(PROTOCOL=tcp)(HOST=194.177.71.238)(PORT=1521))(CONNECT_DATA = (SID = CRDCRPP)))",
+   "synchronize": true,
+   "logging": false,
+   "cache": false,
+   "extra" : {
+      "externalAuth": false
+   },
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}

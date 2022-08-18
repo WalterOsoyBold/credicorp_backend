@@ -1,0 +1,3 @@
+interface UUIDInterface {
+    generateUUID():void
+}
